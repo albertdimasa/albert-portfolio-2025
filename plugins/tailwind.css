@@ -1,0 +1,15 @@
+/* @config "../../tailwind.config.js"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tambahkan CSS custom untuk neo-brutalism */
+@layer components {
+  .brutalist-box {
+    @apply border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .brutalist-hover {
+    @apply transition-transform hover:-translate-y-1 hover:-translate-x-1;
+  }
+}
