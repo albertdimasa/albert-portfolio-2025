@@ -22,12 +22,14 @@
         />
         <h3 class="text-xl md:text-2xl font-black mt-4">{{ project.title }}</h3>
         <p class="mt-2 text-sm md:text-base">{{ project.description }}</p>
-        <div class="flex flex-wrap gap-2 mt-2">
+        <div class="flex flex-wrap gap-2 my-2">
           <span
             v-for="tech in project.tech"
             :key="tech"
-            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-            :style="{ backgroundColor: getRandomColor() }"
+            class="inline-flex items-center px-4 py-2 text-xs font-bold uppercase tracking-wider cursor-pointer relative"
+            :style="getTagStyles(tech)"
+            @mouseover="handleMouseOver"
+            @mouseout="handleMouseOut"
           >
             {{ tech }}
           </span>
@@ -43,7 +45,7 @@ const projects = [
     description:
       "A company profile website built with a simple Content Management System (CMS), providing an easy way to manage and update content.",
     image: "/images/pratama.png",
-    tech: ["Laravel", "Jquery", "JavaScript", "Bootstrap"],
+    tech: ["Nuxt", "Tailwind", "Supabase"],
   },
   {
     title: "Reservation System",
@@ -54,12 +56,67 @@ const projects = [
   },
 ];
 
-const getRandomColor = () => {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+const techColors = {
+  Laravel: {
+    background: "#FF2D20",
+    color: "#FFFFFF",
+  },
+  MySQL: {
+    background: "#00758F",
+    color: "#FFFFFF",
+  },
+  React: {
+    background: "#61DAFB",
+    color: "#000000",
+  },
+  Nuxt: {
+    background: "#00DC82",
+    color: "#000000",
+  },
+  JavaScript: {
+    background: "#F7DF1E",
+    color: "#000000",
+  },
+  jQuery: {
+    background: "#0769AD",
+    color: "#FFFFFF",
+  },
+  Bootstrap: {
+    background: "#7952B3",
+    color: "#FFFFFF",
+  },
+  Tailwind: {
+    background: "#38BDF8",
+    color: "#FFFFFF",
+  },
+  Supabase: {
+    background: "#3ECF8E",
+    color: "#000000",
+  },
+};
+
+const getRandomRotation = () => Math.random() * 4 - 2;
+const getRandomOffset = () => Math.random() * 4 - 2;
+
+const getTagStyles = (tech) => {
+  return {
+    backgroundColor: techColors[tech]?.background || "#000000",
+    color: techColors[tech]?.color || "#FFFFFF",
+    border: "3px solid black",
+    borderRadius: "3px",
+    boxShadow: "3px #px 0 black",
+    transform: `rotate(${getRandomRotation()}deg) translate(${getRandomOffset()}px, ${getRandomOffset()}px)`,
+    transition: "transform 0.2s ease-in-out",
+  };
+};
+
+const handleMouseOver = (e) => {
+  e.currentTarget.style.transform = "rotate(0deg) translate(0px, 0px)";
+  e.currentTarget.style.boxShadow = "2px 2px 0 black";
+};
+
+const handleMouseOut = (e) => {
+  e.currentTarget.style.transform = `rotate(${getRandomRotation()}deg) translate(${getRandomOffset()}px, ${getRandomOffset()}px)`;
+  e.currentTarget.style.boxShadow = "4px 4px 0 black";
 };
 </script>

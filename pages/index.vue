@@ -2,8 +2,8 @@
   <div class="min-h-screen relative">
     <!-- Wrapper untuk mengatur max-width -->
     <div class="max-w-6xl mx-auto">
-      <TheHeader />
-      <TheHero />
+      <TheHeader data-aos="fade-up" />
+      <TheHero data-aos="fade-up" />
       <button
         class="fixed bottom-4 right-4 p-2 bg-yellow-300 rounded-full hover:bg-yellow-400 transition-colors z-10"
         @click="scrollToTop"
@@ -24,9 +24,9 @@
           />
         </svg>
       </button>
-      <TheProjects />
-      <TheExperience />
-      <TheContact />
+      <TheProjects data-aos="fade-down" />
+      <TheExperience data-aos="fade-right" />
+      <TheContact data-aos="fade-left" />
     </div>
   </div>
 </template>
@@ -38,7 +38,8 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Personal Website of Dimas Albert Abraham, a web developer and abap programmer",
+      content:
+        "Personal Website of Dimas Albert Abraham, a web developer and abap programmer",
     },
   ],
 });
@@ -66,4 +67,3 @@ body {
   scroll-behavior: smooth;
 }
 </style>
-
