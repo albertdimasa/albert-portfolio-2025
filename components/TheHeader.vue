@@ -45,8 +45,8 @@
 const isMenuOpen = ref(false);
 const menuItems = [
   { text: "HOME", link: "/" },
-  { text: "EXPERIENCE", link: "#experience" },
   { text: "PROJECTS", link: "#projects" },
+  { text: "EXPERIENCE", link: "#experience" },
   { text: "CONTACT", link: "#contact" },
 ];
 </script>

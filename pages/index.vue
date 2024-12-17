@@ -42,6 +42,24 @@ useHead({
         "Personal Website of Dimas Albert Abraham, a web developer and abap programmer",
     },
   ],
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Dimas Albert Abraham",
+        url: "https://albertdimasa.site",
+        jobTitle: "Web Developer & ABAP Programmer",
+        sameAs: [
+          "https://github.com/albertdimasa",
+          "https://linkedin.com/in/albertdimasa",
+        ],
+        description:
+          "Web Developer yang berspesialisasi dalam Laravel dan Nuxt.js. Serta juga ABAP Programmer.",
+      }),
+    },
+  ],
 });
 onMounted(() => {
   window.addEventListener("scroll", () => {
