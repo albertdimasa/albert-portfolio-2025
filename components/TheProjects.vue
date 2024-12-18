@@ -6,7 +6,7 @@
     >
       PROJECTS
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 cursor-pointer">
       <div
         v-for="project in projects"
         :key="project.title"
@@ -40,24 +40,45 @@
 </template>
 <style scoped>
 #projects {
-  scroll-margin-top: -4rem;
+  scroll-margin-top: -5rem;
 }
 </style>
 <script setup>
 const projects = [
   {
-    title: "Company Profile Website",
+    title: "Pratama Constech Group",
     description:
       "A company profile website built with a simple Content Management System (CMS), providing an easy way to manage and update content.",
     image: "/images/pratama.png",
     tech: ["Nuxt", "Tailwind", "Supabase"],
   },
   {
-    title: "Reservation System",
+    title: "Happy Puppy Karaoke",
     description:
-      "As a backend developer, I managed the master data in the admin panel, built APIs for the frontend, and did some frontend translation work.",
+      "As a backend developer, I built and managed the master data in the admin panel, built APIs for the frontend, and did some frontend translation work.",
     image: "/images/happup.png",
     tech: ["Laravel", "MySQL", "React"],
+  },
+  {
+    title: "Navisya Mart",
+    description:
+      "I developed a comprehensive business management system featuring sales, purchasing, accounts management, financial reporting, and user administration for streamlined company operations.",
+    image: "/images/navisya.png",
+    tech: ["Laravel", "MySQL", "jQuery"],
+  },
+  {
+    title: "Kotak Sidokumpul",
+    description:
+      "I developed a web platform for Sidokumpul Village featuring data management, interactive mapping, news updates, and AI-powered support to streamline administrative processes.",
+    image: "/images/desatalok.png",
+    tech: ["Laravel", "MySQL", "jQuery"],
+  },
+  {
+    title: "PSB Fatchul Ulum Pacet",
+    description:
+      "I developed a student enrollment system for Islamic boarding schools featuring registration management, PDF generation for acceptance letters, and comprehensive data administration.",
+    image: "/images/psb.png",
+    tech: ["Laravel", "MySQL", "jQuery"],
   },
 ];
 
