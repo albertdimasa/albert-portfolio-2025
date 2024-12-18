@@ -33,6 +33,11 @@
     </div>
   </section>
 </template>
+<style scoped>
+#experience {
+  scroll-margin-top: 7rem; /* Adjust value to match your header height */
+}
+</style>
 <script setup>
 const experience = [
   {

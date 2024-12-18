@@ -38,6 +38,11 @@
     </div>
   </section>
 </template>
+<style scoped>
+#projects {
+  scroll-margin-top: -4rem;
+}
+</style>
 <script setup>
 const projects = [
   {

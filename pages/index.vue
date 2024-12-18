@@ -25,8 +25,8 @@
         </svg>
       </button>
       <TheProjects data-aos="fade-down" />
-      <TheExperience data-aos="fade-right" />
-      <TheContact data-aos="fade-left" />
+      <TheExperience data-aos="fade-up" />
+      <TheContact data-aos="fade-down" />
     </div>
   </div>
 </template>
@@ -39,7 +39,7 @@ useHead({
     {
       name: "description",
       content:
-        "Personal Website of Dimas Albert Abraham, a web developer and abap programmer",
+        "Web Developer yang berspesialisasi dalam Laravel dan Nuxt.js. Serta juga ABAP Programmer.",
     },
   ],
   script: [
