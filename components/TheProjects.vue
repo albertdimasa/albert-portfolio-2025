@@ -49,36 +49,43 @@ const projects = [
     title: "Pratama Constech Group",
     description:
       "A company profile website built with a simple Content Management System (CMS), providing an easy way to manage and update content.",
-    image: "/images/pratama.png",
+    image: "/images/pratama.webp",
     tech: ["Nuxt", "Tailwind", "Supabase"],
   },
   {
     title: "Happy Puppy Karaoke",
     description:
       "As a backend developer, I built and managed the master data in the admin panel, built APIs for the frontend, and did some frontend translation work.",
-    image: "/images/happup.png",
+    image: "/images/happup.webp",
     tech: ["Laravel", "MySQL", "React"],
   },
   {
     title: "Navisya Mart",
     description:
       "I developed a comprehensive business management system featuring sales, purchasing, accounts management, financial reporting, and user administration for streamlined company operations.",
-    image: "/images/navisya.png",
+    image: "/images/navisya.webp",
     tech: ["Laravel", "MySQL", "jQuery"],
   },
   {
     title: "Kotak Sidokumpul",
     description:
       "I developed a web platform for Sidokumpul Village featuring data management, interactive mapping, news updates, and AI-powered support to streamline administrative processes.",
-    image: "/images/desatalok.png",
+    image: "/images/desatalok.webp",
     tech: ["Laravel", "MySQL", "jQuery"],
   },
   {
     title: "PSB Fatchul Ulum Pacet",
     description:
       "I developed a student enrollment system for Islamic boarding schools featuring registration management, PDF generation for acceptance letters, and comprehensive data administration.",
-    image: "/images/psb.png",
+    image: "/images/psb.webp",
     tech: ["Laravel", "MySQL", "jQuery"],
+  },
+  {
+    title: "MWC NU Jatirogo",
+    description:
+      "I developed a website for the Jatirogo branch of the Nahdlatul Ulama Muslim organization featuring news updates, event management, and interactive mapping.",
+    image: "/images/mwcnu.webp",
+    tech: ["Wordpress"],
   },
 ];
 
@@ -118,6 +125,10 @@ const techColors = {
   Supabase: {
     background: "#3ECF8E",
     color: "#000000",
+  },
+  Wordpress: {
+    background: "#21759B",
+    color: "#FFFFFF",
   },
 };
 
