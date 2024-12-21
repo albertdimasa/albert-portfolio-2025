@@ -19,7 +19,7 @@
     <nav class="md:hidden">
       <div class="flex justify-between items-center p-4">
         <h1 class="text-2xl font-black">PORTFOLIO</h1>
-        <button @click="isMenuOpen = !isMenuOpen" class="brutalist-box p-2">
+        <button id="hamburger-button" @click="isMenuOpen = !isMenuOpen" class="brutalist-box p-2">
           <span class="block w-6 h-0.5 bg-black mb-1"></span>
           <span class="block w-6 h-0.5 bg-black mb-1"></span>
           <span class="block w-6 h-0.5 bg-black"></span>

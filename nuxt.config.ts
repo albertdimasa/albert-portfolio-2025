@@ -1,14 +1,15 @@
-// // https://nuxt.com/docs/api/configuration/nuxt-config
-// export default defineNuxtConfig({
-//   compatibilityDate: '2024-11-01',
-//   devtools: { enabled: true }
-// })
-
 // nuxt.config.ts
 export default defineNuxtConfig({
   ssr: true,
   css: ['~/plugins/tailwind.css'],
   modules: ['@nuxtjs/tailwindcss', 'nuxt-aos'],
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
+    },
+  },
   aos: {
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -29,7 +30,7 @@ export default defineNuxtConfig({
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-   
+
   },
   build: {
     transpile: ['@heroicons/vue']
