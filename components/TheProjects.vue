@@ -92,7 +92,7 @@ const projects = [
 const techColors = {
   Laravel: {
     background: "#FF2D20",
-    color: "#FFFFFF",
+    color: "#000000",
   },
   MySQL: {
     background: "#00758F",
@@ -120,7 +120,7 @@ const techColors = {
   },
   Tailwind: {
     background: "#38BDF8",
-    color: "#FFFFFF",
+    color: "#000000",
   },
   Supabase: {
     background: "#3ECF8E",

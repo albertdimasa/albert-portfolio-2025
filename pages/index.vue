@@ -5,9 +5,10 @@
       <TheHeader data-aos="fade-up" />
       <TheHero data-aos="fade-up" />
       <button
-        class="fixed bottom-4 right-4 p-2 bg-yellow-300 rounded-full hover:bg-yellow-400 transition-colors z-10"
+        class="fixed bottom-4 right-4 p-2 bg-blue-300 rounded-full hover:bg-blue-400 transition-colors z-10"
         @click="scrollToTop"
         v-show="scrollY > 400"
+        aria-label="Scroll Menu"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

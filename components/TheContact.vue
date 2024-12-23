@@ -6,7 +6,7 @@
       <div class="space-y-4">
         <a
           href="mailto:albertabraham28@email.com"
-          class="brutalist-box brutalist-hover block p-4 bg-white text-sm md:text-base flex items-center"
+          class="brutalist-box brutalist-hover p-4 bg-white text-sm md:text-base flex items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@
         </a>
         <a
           href="https://github.com/albertdimasa"
-          class="brutalist-box brutalist-hover block p-4 bg-white text-sm md:text-base flex items-center"
+          class="brutalist-box brutalist-hover p-4 bg-white text-sm md:text-base flex items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/dimas-albert-abraham/"
-          class="brutalist-box brutalist-hover block p-4 bg-white text-sm md:text-base flex items-center"
+          class="brutalist-box brutalist-hover p-4 bg-white text-sm md:text-base flex items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
