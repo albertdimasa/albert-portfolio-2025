@@ -7,9 +7,10 @@
       PROJECTS
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 cursor-pointer">
-      <div
-        v-for="project in projects"
+      <NuxtLink
+        v-for="(project, index) in projects"
         :key="project.title"
+        :to="`/projects/${index + 1}`"
         class="brutalist-box brutalist-hover bg-white p-4"
       >
         <img
@@ -34,7 +35,7 @@
             {{ tech }}
           </span>
         </div>
-      </div>
+      </NuxtLink>
     </div>
   </section>
 </template>
